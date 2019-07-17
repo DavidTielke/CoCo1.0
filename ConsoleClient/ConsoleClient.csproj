@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <StartupObject></StartupObject>
+    <ApplicationIcon />
+    <AssemblyName>UI.ConsoleClient</AssemblyName>
+    <RootNamespace>DavidTielke.PersonManagementApp.UI.ConsoleClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiMappings\DiMappings.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="data.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

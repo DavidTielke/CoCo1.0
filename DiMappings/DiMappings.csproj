@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Mappings.DiMappings</AssemblyName>
+    <RootNamespace>DavidTielke.PersonManagementApp.Mappings.DiMappings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
+    <ProjectReference Include="..\DataStoring\DataStoring.csproj" />
+    <ProjectReference Include="..\PersonManagement.Contract\PersonManagement.Contract.csproj" />
+    <ProjectReference Include="..\PersonManagement\PersonManagement.csproj" />
+  </ItemGroup>
+</Project>
